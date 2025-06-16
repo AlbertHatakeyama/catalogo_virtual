@@ -1,0 +1,485 @@
+/**
+ * @theme LP1
+ * @version 1.0
+ * @author BMA Soluções Digitais
+ * @site https://bmasolucoesdigitais.com.br/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color_1:#FFFF;
+    --color_2:#000000;
+    --color_3:#6610F2;
+    --color_4:#0D6EFD;
+    --color_5:#F8F9FA;
+    --color_6:#212529;
+    --color_7:#c84343;
+    
+
+   
+    --background-banner: rgb(227, 227, 239);
+    --background_1: #FFFFFF;
+    --background_2: #75616b;
+    --background_3: rgba(216, 76, 37, 0.856);
+    --background_4:rgb(191, 207, 247);
+    --background_5: rgb(220, 228, 247);
+    --background_6: #c9c772;
+    --background_7: rgb(87, 133, 0);
+    --background_8:#222;
+    --background_9: #eee;
+    --background_trans:rgba(0, 0, 0, 0.267);
+
+    
+    --rounded: 30px;
+    --rounded2: .5rem;
+    --rounded3: 50%;
+    --boders: #FFFFFF33;
+  
+    --shadow: 5px 5px 10px #00000010;
+    --shadow_hover: 5px 5px 10px #00000033;
+
+    --btn_color: #ffffff;
+    --btn_color_hover: #000000;
+    --btn_border: #0000001a;
+    --btn_radius: .3rem;
+    --btn_shadow: 5px 5px 10px #0000001a;
+    --btn_shadow_hover: inset 5px 5px 10px #0000001a;
+
+    --scrollbar_fundo: initial;
+    --scrollbar_color: #777777;
+
+    /*Fontes para Clínica*/
+    --font_clinica1: 'Quicksand', sans-serif;
+    --font_clinica2: 'Fredoka', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    background: var(--background_1);
+    scrollbar-color: var(--scrollbar_color) var(--scrollbar_fundo);
+    overflow: overlay;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    color: var(--color_lestras_1) !important;
+}
+
+body.no_scroll {
+    overflow: hidden;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background: #000000;
+    transition: opacity .2s ease-in-out;
+}
+
+body.blur::after {
+    opacity: .7;
+    z-index: 999;
+}
+
+body::-webkit-scrollbar-track {
+    background-color:var(--scrollbar_fundo)
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:var(--scrollbar_color);
+    border-radius:.25rem
+}
+
+body::-webkit-scrollbar {
+    width:10px;
+    height:10px
+}
+
+
+#tela_carregamento {
+    background: var(--background_1);
+    position: fixed;
+    opacity: 1;
+    top: 0; left: 0; bottom: 0; right: 0;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity .3s linear;
+}
+
+#tela_carregamento.sumir {    
+    opacity: 0;
+}
+
+#tela_carregamento .spinner {
+    --clr: var(--color_2_forms);
+    --gap: 6px;
+
+    width: 6.25rem;
+    height: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+    
+#tela_carregamento .spinner span {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background-color: var(--clr);
+    opacity: 0;
+}
+    
+#tela_carregamento .spinner span:nth-child(1) {
+    animation: fade 1s ease-in-out infinite;
+}
+    
+#tela_carregamento .spinner span:nth-child(2) {
+    animation: fade 1s ease-in-out 0.33s infinite;
+}
+    
+#tela_carregamento .spinner span:nth-child(3) {
+    animation: fade 1s ease-in-out 0.66s infinite;
+}
+    
+@keyframes fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    
+    60% {
+        opacity: 0;
+    }
+}
+
+/* NAVBAR */
+.scrolled-up {
+    background: var(--background_6);
+    box-shadow: var(--btn_shadow);
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar {
+    background-color: var(--color_3);
+    transition: transform 0.3s ease-in-out;
+}
+.navbar img {
+   max-width: 100px; 
+}
+.navbar-brand {
+    color: var(--color_8);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color_1);
+    font-weight: bold;
+    font-family: var(--font_clinica1);
+    margin-right: 1.5rem;
+}
+
+.navbar-collapse {
+    z-index: 999;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown:hover .nav-link {
+    color: var(--color_8);
+}
+
+.btn-primary{
+    background-color: var(--background_3);
+    border: none;
+    width: 120px;
+}
+
+.banner_parallax{
+    background-image: url(../assets/imagens/fundos/fundo1.jpg);
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_parallax h1{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.banner_parallax p{
+    color: var(--color_1);
+    font-family: var(--font_clinica2);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.banner_parallax i{
+    font-size: 1rem;
+    
+}
+
+/*****Quem Somos*****/
+.quem_somos{
+    background-color: var(--background_3);
+}
+
+.apresentacao h1{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.apresentacao h2{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.apresentacao h3{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 500;
+    font-size: 2rem;
+}
+.apresentacao p{
+    color: var(--color_1);
+    font-family: var(--font_clinica2);
+    font-weight: 200;
+    font-size: 1rem;
+}
+.apresentacao hr{
+    border-top: 10px solid hsl(223, 88%, 78%);
+    border-radius: 1rem;
+    width: 150px;
+}
+
+.separador-z {
+    border: none;
+    border-radius: 40px 0 0 40px;
+    border-left: 10px solid hsl(223,78%, 86%, 100%);
+    color: var(--background_4);
+    width: 1px;
+}
+/*****Serviços*****/
+.funcionalidades{
+    background-color: var(--color_3);
+}
+
+.funcionalidades h1{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.funcionalidades h2{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.funcionalidades h3{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.funcionalidades hr{
+    border-top: 10px solid hsl(36, 95%, 59%);
+    border-radius: 1rem;
+    width: 150px;
+}
+
+.page-section h3{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 500;
+    font-size: 2rem;
+}
+.page-section p{
+  color: var(--color_1);
+  font-family: var(--font_clinica2);
+  font-weight: 400;
+  font-size: 1rem; 
+}
+
+.page-section img{
+    max-width:300px;
+    border-radius: 1rem;
+}
+
+/**Login**/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--background_4);
+  outline: 2px solid var(--color_6);
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  outline: 2px solid var(--color_7);
+}
+
+.label {
+  align-self: flex-start;
+  color: var(--color_7);
+  font-weight: 600;
+}
+
+.form .submit {
+  padding: 1rem 0.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--color_6);
+  color: var(--color_1);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form .submit:hover {
+  background-color: var(--color_7);
+  color: var(--color_6);
+}
+
+.span {
+  text-decoration: none;
+  color: var(--color_6);
+}
+
+.span a {
+  color: var(--color_7);
+}
+
+/**Footer**/
+.footer{
+    background-color: var(--color_4);
+}
+
+.bord-img{
+    border-radius: 1rem;
+}
+
+.footer  h1{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.footer  h2{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 600;
+    font-size: 2.5rem;
+
+}
+.footer  p{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.footer  li{
+    color: var(--color_1);
+    font-family: var(--font_clinica1);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/*//////////////////////// 
+        MIDIAS QUERYS
+////////////////////////*/
+/*--------------------------------------------------------*/
+@media (min-width: 375px) and (max-width: 425px) {
+
+}
+/*--------------------------------------------------------*/
+@media (min-width: 425px) and (max-width: 575px) {
+
+}
+
+/*--------------------------------------------------------*/
+
+@media (min-width: 620px) and (max-width: 700px) {
+
+}
+
+/*--------------------------------------------------------*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    
+}
+
+/*--------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+}
+
+/*--------------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/*--------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+}
+/*--------------------------------------------------------*/
+
+@media (min-width: 1400px) and (max-width: 2500px) {
+ 
+}

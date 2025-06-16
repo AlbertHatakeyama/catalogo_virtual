@@ -1,0 +1,89 @@
+body, html{
+    height: 100%;
+    background-color: #5B8992;
+    background-position: center center;  
+    font-family: 'Oxygen', sans-serif;
+}
+
+.main{
+    margin-top: 100px;
+}
+
+h1.title { 
+    font-size: 50px;
+    font-family: 'Passion One', cursive; 
+    font-weight: 400; 
+}
+
+.profile-img-card {
+    width: 130px;
+    height: 130px;
+    margin-top: -115px;
+    margin-left: 55px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr{
+    width: 10%;
+    color: #fff;
+}
+
+.form-group{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 15px;
+    padding-top: 0px;
+}
+
+.main-login{
+    background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.main-center{
+    /*margin-top: 20px;*/
+    margin: 0 auto;
+    max-width: 330px;
+    padding: 40px 50px;
+    margin-bottom: 0px;
+    border-radius:10px;
+}
+
+.login-button{
+    margin-top: 5px;
+    /*background-color: #2C77F4;*/
+    background: linear-gradient(to right, #FF5E00 0%, #FF9900 100%);
+    border:none;
+}
+
+.login-register{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.Esqueceu-a-senha{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0px;
+}
