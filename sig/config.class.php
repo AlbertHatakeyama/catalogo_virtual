@@ -9,12 +9,12 @@ error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 Class Connection {
 
     //PRODUÇÃO
-    private   $server = "mysql:host=localhost;dbname=beme5682_sig";
-    private   $user = "beme5682_sig";
-    private   $pass = "574ahM8*iePf+tb1";
+    private   $server = "";
+    private   $user = "";
+    private   $pass = "";
     
     //LOCAL
-    private   $local_server = "mysql:host=localhost;dbname=catalogo_virtual_sig";
+    private   $local_server = "mysql:host=localhost;dbname=catalogo_virtual";
     private   $local_user = "root";
     private   $local_pass = "";
     
