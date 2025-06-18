@@ -15,7 +15,7 @@
                                 Curso: Análise e Desenvolvimento de Sistemas (5078695)
                             </li>
                             <li class="mb-2">
-                                Minha escolha: Site de agenda(MeuDia)
+                                Minha escolha: Catálogo de Roupa
                             </li>
                             <li class="mb-2">
                                 <a href="mailto:ahnbarrete@gmail.com" class="text-decoration-none text-white">
@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="text-center my-4">
-                            <img src="assets/imagens/logos/logo-ahn.jpeg" alt="" class="image-fluid bord-img">
+                            <img src="assets/imagens/logos/logo-ahn.jpeg" alt="" class="img-fluid bord-img">
                         </div>
                     </div>
                 </div>

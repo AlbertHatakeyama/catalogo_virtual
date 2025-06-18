@@ -1,33 +1,30 @@
 <?php
+    include_once("./sig/config.class.php");
+    include_once("./sig/class.php");
     include("./includes/head.php");
 ?>
 <section class="banner_parallax d-flex align-items-center justify-content-center">
     <article class="container">
         <div class="row">
-             <div class="col-lg-4 col-md-4 col-12"></div>
-            <div class="col-lg-8 col-md-8 col-12">
-                <div class="text-center my-4 px-4">
-                    <h1>Organize seu dia com leveza e praticidade</h1>
-                    <div class="text-lg-start text-md-center px-4">
-                        <p>
-                            Com o MeuDia, planejar suas tarefas e compromissos nunca foi tão simples. Uma plataforma feita para transformar sua rotina em produtividade com liberdade.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="text-center text-white my-2">
-                    <i class="fa-solid fa-arrow-down-long animated-arrow"></i>
+            <div class="col-lg-6 col-md-6 col-12 col-sm-12">
+                <div class="text-lg-start text-md-center text-sm-center p-4">
+                    <h1>
+                        Estilo que Inspira <br> Nova Coleção 2025
+                    </h1>
+                    <p>
+                        Renove seu guarda-roupa com peças modernas, confortáveis e com personalidade. Explore agora nosso catálogo virtual e encontre seu próximo look favorito!
+                    </p>
                 </div>
             </div>
         </div>
     </article>
 </section>
-<section class="quem_somos p-4">
+<section class="quem_somos p-4" id="sobre_nos">
     <article class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-12">
                 <div class="apresentacao text-start">
-                    <h1>Sobre o MeuDia </h1>
+                    <h1>Sobre Nós </h1>
                     <hr class="mt-0">
                 </div>
             </div>
@@ -39,10 +36,9 @@
             <div class="separador-z my-2"></div>
             <div class="col-lg-6 col-md-6 col-12 col-sm-12 d-flex align-items-center justify-content-center">
                 <div class="apresentacao my-4">
-                    <h2>MeuDia</h2>
-                    <br>
+                    <h2>Paulistana Summer</h2>
                     <p>
-                        O MeuDia é uma plataforma desenvolvida para ajudar pessoas a organizarem suas tarefas, compromissos e metas diárias de forma simples, rápida e visual. Com um design leve e colorido, queremos transformar a gestão do tempo em algo prazeroso.
+                        Somos apaixonados por moda e acreditamos que estilo é uma forma de expressão. Nosso catálogo foi criado para oferecer uma experiência visual simples, prática e inspiradora, apresentando peças cuidadosamente selecionadas com foco em conforto, autenticidade e beleza.
                     </p>
                     <br>
                     <h3 class="text-md-start text-sm-center">Nossa Missão</h3>
@@ -56,103 +52,42 @@
         </div>
     </article>
 </section>
-<section class="funcionalidades p-4">
-    <article class="container">
+<!--PRODUTOS-->
+<section class="produtos p-4" id="produtos">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-12">
-                <div class="funcionalidades text-start">
-                    <h1>Funcionalidades</h1>
+                <div class="apresentacao text-start">
+                    <h1>Produtos</h1>
                     <hr class="mt-0">
-                </div>
-            </div>    
-            <div class="col-lg-12 col-md-12 col-12">
-                <div class="funcionalidades text-center px-4">
-                    <h2>O que você pode fazer com o MeuDia?</h2>
-                </div>
-            </div>    
-            <div class="page-section titulo-card">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 animacao animate-slide-in-right" data-animation-type="right" data-animation-delay="0.<?= rand(0, 4) ?>s" style="animation-delay: 0s;">
-                        <div class="text-center">
-                            <img src="assets/imagens/funcionalidades/funcionalidade1.png" class="img-fluid ">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s" style="animation-delay: 0s;">
-                        <div class="my-4">
-                            <h3>Criar, editar e excluir tarefas</h3>
-                            <p>
-                                Oferecemos festas personalizadas com decoração temática, brinquedos, buffet completo, recreadores e muito mais.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-lg-2 order-md-2 animacao animate-slide-in-right" data-animation-type="right" data-animation-delay="0.<?= rand(0, 4) ?>s" style="animation-delay: 0s;">
-                        <div class="text-center">
-                            <img src="assets/imagens/funcionalidades/funcionalidade2.png" class="img-fluid  ">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-lg-1 order-md-1 animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s" style="animation-delay: 0s;">
-                        <div class="p-4 my-4">
-                            <h3>Agendar compromissos</h3>
-                            <p>
-                                Também fazemos eventos mais intimistas, com charme e qualidade.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 animacao animate-slide-in-right  " data-animation-type="right" data-animation-delay="0.<?= rand(0, 4) ?>s" style="animation-delay: 0s;">
-                        <div class="text-center">
-                            <img src="assets/imagens/funcionalidades/funcionalidade3.jpg" class="img-fluid  ">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s" style="animation-delay: 0s;">
-                        <div class="my-4">
-                            <h3>Organizar por categorias</h3>
-                            <p>
-                                Levamos nosso buffet até empresas que querem presentear filhos de colaboradores com uma festa encantadora.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-lg-2 order-md-2 animacao animate-slide-in-right " data-animation-type="right" data-animation-delay="0.<?= rand(0, 4) ?>s" style="animation-delay: 0s;">
-                        <div class="text-center">
-                            <img src="assets/imagens/funcionalidades/funcionalidade4.jpg" class="img-fluid  ">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-lg-1 order-md-1 animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s" style="animation-delay: 0s;">
-                        <div class="p-4 my-4">
-                            <h3 >Visualizar seu progresso</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quisquam aspernatur facere enim quasi eaque. A, excepturi? Sapiente ut aperiam, magni reiciendis consectetur aspernatur, illum perspiciatis nihil, aliquid inventore molestias.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </article>
-</section>
-<!--SEÇÃO PRODUTOS-->
-<section class="produtos py-5" id="produtos">
-    <h2 class="text-center fw-bold mb-4">MATERIAIS UTILIZADOS</h2>
-    <div class="container text-center">
-        <h4>
-        Na Max Laser Brasil®, não apenas cortamos materiais, mas moldamos possibilidades.<br> Explore o potencial do corte 
-        a laser conosco e descubra como podemos elevar seus projetos a novos patamares.
-        </h4>
     </div>
     <div class="div-produtos">
         <div class="container-produtos">
-            <?php
-            
-            $Categorias = new Categorias();
-            $oCategoria = $Categorias->carregarCategorias("", "categorias.titulo ASC");
-            if($oCategoria){
-                foreach($oCategoria as $res_categoria){
-                
-                $categorias_titulo    = $res_categoria->getTitulo();
-                $categorias_subtitulo = $res_categoria->getSubtitulo(); 
-                $categorias_imagem    = $res_categoria->getImagem();
-                $categorias_url       = $res_categoria->getUrl();
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-12 col-sm-12"></div>
+                <div class="col-lg-6 col-md-6 col-12 col-sm-12">
+                    <div class="text-center">
+                        <h2>Conheça Nossa Coleção</h2>
+                        <p class="text-start">
+                            Aqui você encontra roupas e acessórios pensados para o dia a dia, eventos especiais ou aquele momento de puro conforto. Escolha entre blusas, calças, tênis, mochilas e muito mais. Tudo com qualidade e estilo para todos os gostos.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 col-sm-12"></div>
+            </div>
+            <?php            
+                $Categorias = new Categorias();
+                $oCategoria = $Categorias->carregarCategorias("", "categorias.titulo ASC");
+                if($oCategoria){
+                    foreach($oCategoria as $res_categoria){
+                    
+                    $categorias_titulo    = $res_categoria->getTitulo();
+                    $categorias_subtitulo = $res_categoria->getSubtitulo(); 
+                    $categorias_imagem    = $res_categoria->getImagem();
+                    $categorias_url       = $res_categoria->getUrl();
             ?>
             <div class="card-produtos">
                 <div class="animacao animate-slide-in-top" data-animation-type="top" data-animation-delay="0.<?= rand(0, 4) ?>s">
@@ -183,6 +118,66 @@
         <a href="obrigado-whatsapp" class="btn btn-lg btn-primary" target="_blank">Entar em contato</a>
     </div>
 </section>
+<section class="galeria p-4" id="galeria" >
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="galeria text-start">
+                        <h1>Galeria</h1>
+                        <hr class="mt-0">
+                    </div>
+                    <p>
+                        Confira fotos reais dos nossos produtos em diferentes estilos e combinações. Inspire-se com looks modernos, versáteis e cheios de personalidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem1.jpg" alt="imagem1" class="img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem4.jpg" alt="imagem4" class="img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem7.jpg" alt="imagem7" class="img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem6.jpg" alt="imagem6" class=" img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem2.jpg" alt="imagem2" class=" img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem8.jpg" alt="imagem8" class=" img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem3.jpg" alt="imagem3" class="img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem5.jpg" alt="imagem5" class=" img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+                <div class=" my-4">
+                    <img src="assets/imagens/galeria/imagem9.jpg" alt="imagem9" class="img-fluid bord-img animacao animate-slide-in-left" data-animation-type="left" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="text-center my-4">
+                <a href="obrigado-whatsapp" target="_blank" class="btn btn-success text-decoration-none text-white">
+                    <i class="fab fa-whatsapp mx-2"></i>Chamar no whatsapp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.522891835705!2d-46.61225392458919!3d-23.585573062482325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5be650476023%3A0x2c33390e6e3805b1!2sMuseu%20do%20Ipiranga!5e0!3m2!1spt-BR!2sbr!4v1736445839997!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <?php
     include("./includes/footer.php");
 ?>

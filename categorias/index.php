@@ -1,7 +1,7 @@
 <?php
 include_once("../../sig/config.class.php");
 include_once("../../sig/class.php");
-include("../../header.php");
+include("../../includes/head.php");
 
 //CLASSES
 $Categorias = new Categorias();
@@ -28,9 +28,6 @@ $categorias_subtitulo = $oCategoria[0]->getSubtitulo();
 ?>
 
     <main>
-
-      
-
       <section class="banner-fotos d-flex align-items-center justify-content-center">
         <div class="container">
           <div class="row justify-content-center">
@@ -69,7 +66,7 @@ $categorias_subtitulo = $oCategoria[0]->getSubtitulo();
                         
                         echo "
                         <div class='my-4'>
-                          <img src='../../galeria/".$galeria_imagem."' alt='imagem de projeto em acrílico' loading='lazy' class='img-fluid bord-img animacao animate-slide-in-left' data-animation-type='left' data-animation-delay='0.".rand(0, 4)."s'>
+                          <img src='../../galeria/".$galeria_imagem."' alt='' loading='lazy' class='img-fluid bord-img animacao animate-slide-in-left' data-animation-type='left' data-animation-delay='0.".rand(0, 4)."s'>
                         </div>";
                       }
                     }
@@ -125,14 +122,7 @@ $categorias_subtitulo = $oCategoria[0]->getSubtitulo();
             </div>
         </div>
     </section>
-
-      <?php
-        include("../../contato.php");
-      ?>
-
     </main>
-
-
     <?php
-      include("../../footer.php");
+      include("../../includes/footer.php");
     ?>

@@ -87,15 +87,18 @@ else {
                             <a class="nav-link" href="<?=$url?>#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?=$url?>sobre_nos">Sobre Nós</a>
+                            <a class="nav-link" href="<?=$url?>#sobre_nos">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?=$url?>produto">Produtos</a>
+                            <a class="nav-link" href="<?=$url?>#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?=$url?>#galeria">Galeria</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link btn btn-primary" href="<?=$url?>login">Entrar</a>
+                            <a class="nav-link btn btn-primary" href="<?=$url?>login">Contato</a>
                         </li>
                     </ul>
                 </div>

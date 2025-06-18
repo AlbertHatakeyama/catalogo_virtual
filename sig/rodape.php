@@ -1,6 +1,6 @@
         
             <?php
-            //SCRIPT PARA FAZER RODAR O BOTÃO DIRETO NA LINHA <th>
+            //SCRIPT PARA FAZER RODAR O BOTï¿½O DIRETO NA LINHA <th>
             ?>
             <script>
                 $(function(){     
@@ -14,7 +14,7 @@
             </script>
             
             <script>
-                //INCLUI A SETA AO LADO DO BOTÃO, AVISANDO AO USUÁRIO QUE ELE PRECISA CLICAR PARA SALVAR AS ALTERAÇÕES
+                //INCLUI A SETA AO LADO DO BOTï¿½O, AVISANDO AO USUï¿½RIO QUE ELE PRECISA CLICAR PARA SALVAR AS ALTERAï¿½ï¿½ES
                 $('.avisar_seta').click(function(){
                     $('.seta_flutuante').fadeIn("slow");
                     $('.avistar_btn').removeClass("btn-primary");
@@ -47,7 +47,7 @@
 
             <div class="kt-footer kt-grid__item kt-grid kt-grid--desktop kt-grid--ver-desktop" id="kt_footer">
                 <div class="col" style="color:#222;">
-                    <a href="https://www.bmasolucoesdigitais.com.br" target="_blank">Desenvolvido por BMA Solu&ccedil;&atilde;es Digitais</a> &nbsp; | &nbsp; <a href="logout">Sair</a>
+                    <a href="https://www.bmasolucoesdigitais.com.br" target="_blank"></a> &nbsp; | &nbsp; <a href="logout">Sair</a>
                 </div>    
             </div>
         </div>
@@ -70,7 +70,7 @@
 
 
 <?php
-//DEFINE AS CORES DAS LINHAS NAS PÁGINAS DE LISTAGEM DE REGISTROS COMO POR EXEMPLO leads-lista.php
+//DEFINE AS CORES DAS LINHAS NAS Pï¿½GINAS DE LISTAGEM DE REGISTROS COMO POR EXEMPLO leads-lista.php
 ?>
 <script>
 document.addEventListener("DOMContentLoaded", () => {           
