@@ -16,7 +16,7 @@ Class Connection {
     //LOCAL
     private   $local_server = "mysql:host=localhost;dbname=catalogo_virtual";
     private   $local_user = "root";
-    private   $local_pass = "";
+    private   $local_pass = "Mysql@2002";
     
     private   $options = array(
                             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 

@@ -69,7 +69,7 @@
         
         //HOMOLOGA��O
         else if(substr_count($_SERVER['REQUEST_URI'], "/clientes/".nomesite()."/") == 1){
-            $retorno = "https://bmasolucoesdigitais.com.br/clientes/".nomesite()."".$idioma_url.$pagina_url;
+            $retorno = "https://catalogo_virtual/".nomesite()."".$idioma_url.$pagina_url;
         }
         
         //PRODU��O
@@ -1471,7 +1471,7 @@
             $mail->Host = 'rv1.u1.com.br';                          // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                                 // Enable SMTP authentication
             $mail->Username = "contato@".nomesite().urlcomplemento();      // SMTP username
-            $mail->Password = 'Bma*342165641';                      // SMTP password
+            $mail->Password = '';                      // SMTP password
             $mail->SMTPSecure = '';                                 // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                      // TCP port to connect to
 

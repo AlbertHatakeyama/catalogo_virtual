@@ -67,55 +67,41 @@
     <div class="div-produtos">
         <div class="container-produtos">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-12 col-sm-12"></div>
-                <div class="col-lg-6 col-md-6 col-12 col-sm-12">
-                    <div class="text-center">
+                <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                    <div class="my-4 px-4">
                         <h2>Conheça Nossa Coleção</h2>
                         <p class="text-start">
                             Aqui você encontra roupas e acessórios pensados para o dia a dia, eventos especiais ou aquele momento de puro conforto. Escolha entre blusas, calças, tênis, mochilas e muito mais. Tudo com qualidade e estilo para todos os gostos.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-12 col-sm-12"></div>
-            </div>
-            <?php            
-                $Categorias = new Categorias();
-                $oCategoria = $Categorias->carregarCategorias("", "categorias.titulo ASC");
-                if($oCategoria){
-                    foreach($oCategoria as $res_categoria){
-                    
-                    $categorias_titulo    = $res_categoria->getTitulo();
-                    $categorias_subtitulo = $res_categoria->getSubtitulo(); 
-                    $categorias_imagem    = $res_categoria->getImagem();
-                    $categorias_url       = $res_categoria->getUrl();
-            ?>
-            <div class="card-produtos">
-                <div class="animacao animate-slide-in-top" data-animation-type="top" data-animation-delay="0.<?= rand(0, 4) ?>s">
-                <a href="categorias/<?=$categorias_url?>" class="text-decoration-none" style="position: relative;bottom: 30%;">
-                    <div class="px-3 my-4" style="background-image: url('categorias_imagens/<?=$categorias_imagem?>'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 200px; position: relative;" alt="imagem de fundo da categoria"></div>
-                    <h5 class="pt-3 mb-0 text-center fw-bold text-white">
-                    <?=$categorias_titulo?>
-                    </h5>
-                </a>
-                <!-- <div class="img-box">
-                    <a href="categorias/<?=$categorias_url?>"><img src="categorias_imagens/<?=$categorias_imagem?>" alt="imagens de produtos cortados a laser"></a>
-                    <h5 class="pt-3 mb-0 text-center fw-bold"><?=$categorias_titulo?></h5>
+                <?php            
+                    $Categorias = new Categorias();
+                    $oCategoria = $Categorias->carregarCategorias("", "categorias.titulo ASC");
+                    if($oCategoria){
+                        foreach($oCategoria as $res_categoria){
+                        
+                        $categorias_titulo    = $res_categoria->getTitulo();
+                        $categorias_subtitulo = $res_categoria->getSubtitulo(); 
+                        $categorias_imagem    = $res_categoria->getImagem();
+                        $categorias_url       = $res_categoria->getUrl();
+                ?>
+                <div class="card-produtos mb-4">
+                    <div class="animacao animate-slide-in-top" data-animation-type="top" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                    <a href="categorias/<?=$categorias_url?>" class="text-decoration-none" style="position: relative;bottom: 30%;">
+                        <div class="px-3 my-4" style="background-image: url('categorias_imagens/<?=$categorias_imagem?>'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 200px; position: relative;" alt="imagem de fundo da categoria"></div>
+                        <h5 class="pt-3 mb-0 text-center fw-bold text-white">
+                        <?=$categorias_titulo?>
+                        </h5>
+                    </a>
+                    </div>
                 </div>
-                <div class="content-produtos">
-                    <p>
-                    <?=$categorias_subtitulo?>
-                    </p>
-                </div> -->
-                </div>
-            </div>
-            <?php
+                <?php
+                    }
                 }
-            }
-        ?>
+            ?>
+            </div>
         </div>
-    </div>
-    <div class="text-center">
-        <a href="obrigado-whatsapp" class="btn btn-lg btn-primary" target="_blank">Entar em contato</a>
     </div>
 </section>
 <section class="galeria p-4" id="galeria" >
