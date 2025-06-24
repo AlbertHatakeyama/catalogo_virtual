@@ -32,7 +32,7 @@
     --rounded2: .5rem;
     --rounded3: 50%;
   
-    --shadow: 5px 5px 10px #00000010;
+    --shadow: 5px 5px 10px #000000;
     --shadow_hover: 5px 5px 10px #00000033;
 
     --btn_color: #ffffff;
@@ -354,10 +354,27 @@ body::-webkit-scrollbar {
   font-weight: 400;
   font-size: 1rem; 
 }
+
+.div-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-branco);
+}
+ .container-produtos{
+    position: relative;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px;
+
+  }
 /**Cards**/
 .container-produtos .card-produtos{
     position: relative;
-    width: 350px;/*max-*/
+    
     height: 255px;
     background-color: var(--background_6);
     border-radius: 0 0 1rem 1rem;
@@ -445,6 +462,36 @@ body::-webkit-scrollbar {
     font-size: 1rem;
 }
 
+/**Categoria**/
+.banner-fotos{
+    background-image: url(../assets/imagens/fundos/fundo2.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-fotos hr{
+    border-top: 10px solid hsl(0, 0%, 100%);
+    border-radius: 1rem;
+}
+.banner_categorias h2 {
+  color: var(--color_1);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: var(--font_clinica1);
+  font-weight: bold;
+  text-shadow: var(--shadow);
+}
+
+.banner_categorias p {
+  color: var(--color_1);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: var(--font_clinica2);
+  font-weight: bold;
+  text-shadow: var(--shadow);
+}
 
 
 /**Footer**/

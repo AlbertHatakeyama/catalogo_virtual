@@ -86,14 +86,16 @@
                         $categorias_imagem    = $res_categoria->getImagem();
                         $categorias_url       = $res_categoria->getUrl();
                 ?>
-                <div class="card-produtos mb-4">
-                    <div class="animacao animate-slide-in-top" data-animation-type="top" data-animation-delay="0.<?= rand(0, 4) ?>s">
-                    <a href="categorias/<?=$categorias_url?>" class="text-decoration-none" style="position: relative;bottom: 30%;">
-                        <div class="px-3 my-4" style="background-image: url('categorias_imagens/<?=$categorias_imagem?>'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 200px; position: relative;" alt="imagem de fundo da categoria"></div>
-                        <h5 class="pt-3 mb-0 text-center fw-bold text-white">
-                        <?=$categorias_titulo?>
-                        </h5>
-                    </a>
+                <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+                    <div class="card-produtos mb-4">
+                        <div class="animacao animate-slide-in-top" data-animation-type="top" data-animation-delay="0.<?= rand(0, 4) ?>s">
+                            <a href="categorias/<?=$categorias_url?>" class="text-decoration-none" style="position: relative;bottom: 30%;">
+                                <div class="px-3 my-4" style="background-image: url('categorias_imagens/<?=$categorias_imagem?>'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 200px; position: relative;" alt="imagem de fundo da categoria"></div>
+                                <h5 class="pt-3 mb-0 text-center fw-bold text-white">
+                                <?=$categorias_titulo?>
+                                </h5>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <?php

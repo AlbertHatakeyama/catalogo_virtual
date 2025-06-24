@@ -15,7 +15,7 @@
                                 Curso: Análise e Desenvolvimento de Sistemas (5078695)
                             </li>
                             <li class="mb-2">
-                                Minha escolha: Catálogo de Roupa
+                                Minha escolha: Catálogo de Roupas
                             </li>
                             <li class="mb-2">
                                 <a href="mailto:ahnbarrete@gmail.com" class="text-decoration-none text-white">
@@ -50,15 +50,7 @@
             </div>
         </footer>
     </section>
-    
-    <?php 
-        if($config->whatsapp != "https://wa.me/5511978844375?text=Quero%20saber%20mais%20sobre%20os%20servi%C3%A7osa"){
-    ?>
-        <!--====== BOTÃO FLUTUANTE WHATSAPP =======-->
-        <a id="whatsApp" href="obrigado-whatsapp" target="_black">
-            <i class="fa-brands fa-whatsapp fa-shake"></i>
-        </a>
-    <?php } ?>
+
 <!-- Modal para exibir a política de privacidade -->
 <div id="modalPolitica" >
     <div>
